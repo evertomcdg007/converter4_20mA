@@ -1,0 +1,35 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape
+            android:padding="0dp"
+            android:shape="rectangle" >
+
+            <!-- <padding -->
+            <!-- android:bottom="20dp" -->
+            <!-- android:left="20dp" -->
+            <!-- android:right="20dp" -->
+            <!-- android:top="20dp" > -->
+            <!-- </padding> -->
+
+
+            <!-- <stroke -->
+            <!-- android:width="2dp" -->
+            <!-- android:color="@color/Gray" > -->
+            <!-- </stroke> -->
+
+            <corners android:radius="@dimen/size_corners" >
+            </corners>
+
+            <gradient
+                android:angle="90"
+                android:endColor="@color/Azure1"
+                android:startColor="@color/Azure1"
+                android:type="linear" />
+        </shape>
+    </item>
+    <!-- <item> -->
+    <!-- <bitmap android:src="@drawable/fundo1" /> -->
+    <!-- </item> -->
+
+</layer-list>

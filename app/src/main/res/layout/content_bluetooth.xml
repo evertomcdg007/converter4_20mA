@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp">
+
+    <RelativeLayout
+        android:id="@+id/relat1_DLB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shape_screen">
+
+        <RelativeLayout
+            android:id="@+id/relat_line1_DLB"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@color/White"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image1_DLB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_bt_connected" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image1_DLB"
+                android:text="@string/title_connected_devices"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/size_text_item"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/line_device_connected"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relat_line1_DLB"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/select_line"
+            android:onClick="onClickConnectedDevice"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewConnectedLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="-"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/size_text_item" />
+
+            <TextView
+                android:id="@+id/textViewConnectedMac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewConnectedLabel"
+                android:layout_marginLeft="15dp"
+                android:text="-"
+                android:textSize="@dimen/size_text_subitem" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relat1_DLB"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_screen">
+
+        <RelativeLayout
+            android:id="@+id/relat_line3_DLB"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/image2_DLB"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/icon_bt_paired" />
+
+            <TextView
+                android:id="@+id/title_paired_devices"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image2_DLB"
+                android:text="@string/title_paired_devices"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/size_text_item"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relat_line3_DLB"
+            android:layout_marginTop="1dp"
+            android:background="@color/White">
+
+            <ListView
+                android:id="@+id/paired_devices"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

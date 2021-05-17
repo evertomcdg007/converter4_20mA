@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/size_popup_icon"
+            android:layout_height="@dimen/size_popup_icon"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_wait" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/view1"
+            android:text="Title"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/size_text_title"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Gray41" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ProgressBar
+            android:id="@+id/image_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/image_dialog"
+            android:text="Msg"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/size_text_item" />
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rlProgressBar"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:padding="0dp"-->
+    <!--android:visibility="invisible">-->
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/progress_bar_maps"-->
+    <!--style="?android:attr/progressBarStyleHorizontal"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_toLeftOf="@+id/text_porcent_progress"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:indeterminate="false"-->
+    <!--android:progress="1"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text_porcent_progress"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="0dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:text="1/120"-->
+    <!--android:textColor="@color/Black"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/lnTextRead"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="0dp" >-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text_read"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="0dp"-->
+    <!--android:text="UTRs lidas:"-->
+    <!--android:textColor="@color/Black"-->
+    <!--android:textSize="@dimen/size_text_item"-->
+    <!--android:textStyle="italic|bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text_number_read"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="1"-->
+    <!--android:textColor="@color/Black"-->
+    <!--android:textSize="@dimen/size_text_item"-->
+    <!--android:textStyle="italic|bold" />-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_maps_cancel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/selector_dialog_btn_cancel"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="Btn_Cancel"-->
+        <!--android:textColor="@color/Black"-->
+        <!--android:textSize="@dimen/size_text_button"-->
+        <!--android:textStyle="italic|bold" />-->
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_dialog_btn_ok"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Btn_Ok"
+            android:textColor="@color/White"
+            android:textSize="@dimen/size_text_button"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+
+</LinearLayout>

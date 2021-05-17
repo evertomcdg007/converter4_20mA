@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+
+            <!-- <corners android:radius="@dimen/sixe_corners" /> -->
+
+            <corners
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="0dp"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp" >
+            </corners>
+
+            <solid android:color="@color/Gallery" />
+        </shape>
+    </item>
+
+</layer-list>

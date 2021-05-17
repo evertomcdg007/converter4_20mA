@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="sagaBlueColor">#59ADDA</color>
+
+    <color name="colorPrimary">#009688</color>//59ADDA
+    <color name="colorPrimaryDark">#4DB6AC</color>//303F9F
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- App -->
+    <color name="ActionBarColor">#0090C0</color>
+    <color name="FaeBlueColor">#59ADDA</color>
+    <color name="DashBlueColor">#EAF4F9</color>
+
+    Others
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="DimGray">#696969</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="Gold">#FFD700</color>
+    <color name="Gallery">#F0F0F0</color>
+    <color name="Azure1">#F0FFFF</color>
+    <color name="DodgerBlue3">#1874CD</color>
+    <color name="SkyBlue1">#87CEFF</color>
+    <color name="Green3">#00CD00</color>
+    <color name="Red2">#EE0000</color>
+    <color name="Gray41">#696969</color>
+    <color name="Gray61">#9C9C9C</color>
+
+<!--    android:centerColor="#009688"-->
+<!--    android:endColor="#00695C"-->
+<!--    android:startColor="#4DB6AC"-->
+
+</resources>
